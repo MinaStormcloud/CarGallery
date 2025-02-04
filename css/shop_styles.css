@@ -1,0 +1,396 @@
+body{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #96b5ce
+}
+    
+.topnav {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #333;
+  overflow: hidden;
+  padding-bottom: 1rem;
+}  
+   
+.topnav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+  
+.topnav li {
+  float: left;
+}
+  
+.topnav li a {
+  display: inline-flex;
+  color: #f2f2f2;
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+} 
+  
+.topnav li:hover {
+  background-color:var(--light-ash);
+  color: black;
+} 
+  
+   /*Containers*/
+.h1-container{
+  text-align: center;
+}
+.showroom-container{
+  margin-bottom:3px;
+}
+.shopping-cart-container{
+  margin-top:3px;
+}
+.shopping-cart-container{
+  margin-top:3px;
+}
+.product-container{
+  margin-bottom:3px;
+}
+.profile-container{ 
+  margin-top:3rem;
+  margin-bottom:3rem;
+}
+.newsletter-container{
+  margin-top:3rem;
+  margin-bottom:3rem;
+}
+
+/*Text cards*/
+.text-card-img-top {
+  width: 300px;
+}
+
+.text-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  max-width: 75%;
+  margin: auto;
+  margin-top:3rem;
+  margin-bottom:3rem;
+  padding: 16px;
+  padding-left: 2rem;
+  padding-right: 2rem;  
+  font-family: arial;
+}
+
+/* Style the counter cards */
+
+.card-img-top-small {
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  width: 300px;
+}
+.card-img-top {
+  width: 300px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  max-width: auto;
+  margin: auto;
+  padding: 16px;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  border-radius: 0.25rem;
+  border: 1px solid #cccccc;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+/* active button */
+.active-btn{
+  color: #555;
+}
+.active-btn::after{
+  width: 100%;
+}
+
+.canvas-title{
+  text-align: center;
+}
+
+ul{
+  list-style-type: none;
+  color: blue;
+  display: flex;
+}
+
+li{
+  margin-right: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Shopping Cart */
+ .btn-purchase{
+   text-align: center;
+   font-size: 16px;   
+   margin: auto;   
+   border-radius: 0.25rem;
+   padding: 1%;
+   width: fit-content;   
+   color: #ecf9fd;
+   border: 1px solid #036d51;
+   background-color: #036d51;   
+ }
+ 
+ .btn-remove{
+   border-radius: 0.25rem;
+   color: #cccccc;
+   background-color: #c90734;
+ }
+
+ #shopping-cart{
+   padding: 5% 5%;
+ }
+
+ .cart-total{
+   margin-top: 1rem;
+   text-align: left;
+   font-size: 1.3rem;
+ }
+
+.up-icon{
+   color: black;
+   position: fixed;
+   float: right;
+   z-index: 1;
+   left: 95%;
+   top: 85%;
+   font-size: 2rem;
+ } 
+
+/* Responsive columns and rows */
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;
+	  display: flex;
+	  flex-wrap: wrap;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}  
+  
+/**/ 
+
+.brandname {
+  margin-bottom: 0.1%;
+  color: var(--light-ash);
+}
+
+.contactinfo {
+  margin-bottom: 0%;
+  margin-right: 0.5rem;
+}  
+
+.h4-contact {
+  margin-bottom: 0.1%;
+}
+
+hr {
+  margin: 2rem 0;
+  border: 1px #fffff);
+  opacity: 0.05;
+}
+
+/* Footer */
+footer {
+  margin-left: 0% !important;
+  /*padding: 5rem 6rem;*/
+  padding: 3rem;
+  color: #cccccc;
+  background-color: #333;    
+  width: 100%;
+  margin-left: 3rem;
+  box-sizing:border-box;
+}
+.footer-nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-col:first-of-type {
+    margin-bottom: 2rem;
+}
+
+.footer-row {
+  margin-left: 10%;
+  margin-right:10%;    
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;  
+}
+
+.footer-bottom-row {       
+  margin-right:10%;
+  max-height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;    
+} 
+
+/* Extra */  
+.footer-nav {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+
+  li:not(:last-of-type) {
+    margin-right: 1rem;
+  }
+}
+
+footer h1,
+footer h4 {
+  margin-bottom: 1rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: #a5c4ce;;
+  transition: ease-in-out 0.5s;
+}
+
+footer a:hover {
+  opacity: 0.5;
+  color: #a5c4ce;;
+  text-decoration: none;
+}
+
+footer .fa-solid {
+  margin-right: 0.5rem;
+}
+
+.footer-icon {
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.footer-icon:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 600px) {
+  .footer-nav {
+    font-size: small;
+  } 
+  .footer-bottom-row {
+    font-size: small;
+  }  
+  .copyright {
+    padding-right: 1rem;
+  }  
+}
+
+/* Responsive layout - makes a three column-layout instead of four columns */
+@media screen and (max-width: 1300px) {
+  .column {
+    width: 22%;
+    display: block;
+    margin-bottom: 20px;
+  }
+  
+  .card-img-top {
+  max-width: 185px;
+  }
+  
+  .card-img-top-small {
+  max-width: 220px;
+  }
+}
+
+/* Responsive layout - makes a three column-layout instead of four columns */
+@media screen and (max-width: 1000px) {
+  .column {
+    width: 33%;
+    display: block;
+    margin-bottom: 20px;
+  }
+  
+  .card-img-top {
+  max-width: 230px;
+  }  
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    width: 50%;
+    display: block;
+    margin-bottom: 20px;
+  }  
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about-img {    
+    margin-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 400px) {  
+  .map-container{	 
+	font-size: smaller;		
+  }  
+}
