@@ -62,21 +62,50 @@ body{
   margin-bottom:3rem;
 }
 
+/* Container holding the image and the text */
+.image-container {
+  position: relative;
+}
+
+/* Bottom right text */
+.text-block {
+  position: absolute;  
+  bottom: 10px;
+  right: 10px;
+  background-color: black;  
+  opacity: 50%;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 /*Text cards*/
 .text-card-img-top {
   width: 300px;
 }
 
 .text-card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-  max-width: 75%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */  
   margin: auto;
+  width:90%;
   margin-top:3rem;
   margin-bottom:3rem;
-  padding: 16px;
+  padding-top:5rem;
+  padding-bottom:5rem;
   padding-left: 2rem;
   padding-right: 2rem;  
   font-family: arial;
+}
+.about-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */  
+  margin: auto;
+  width:90%;
+  margin-top:3rem;
+  margin-bottom:3rem;
+  padding-top:5rem;
+  padding-bottom:5rem;
+  padding-left: 5.5rem;
+  padding-right: 5rem;   
 }
 
 /* Style the counter cards */
@@ -88,6 +117,11 @@ body{
 }
 .card-img-top {
   width: 300px;
+}
+
+.card-img-about {
+  width: 495px; 
+  border: 1px solid #777;  
 }
 
 .card {
@@ -192,6 +226,23 @@ body {
  } 
 
 /* Responsive columns and rows */
+.about-column {
+  float: left;	
+  width: 50%;
+  padding: 0 10px;
+  
+}
+.about-row {
+	margin: 0 -5px;
+	display: flex;
+	flex-wrap: wrap;}
+	  
+.about-row:after {
+  content: "";
+  display: table;
+  clear: both;
+} 
+
 
 /* Float four columns side by side */
 .column {
@@ -300,13 +351,13 @@ footer h4 {
 
 footer a {
   text-decoration: none;
-  color: #a5c4ce;;
+  color: #a5c4ce;
   transition: ease-in-out 0.5s;
 }
 
 footer a:hover {
   opacity: 0.5;
-  color: #a5c4ce;;
+  color: #a5c4ce;
   text-decoration: none;
 }
 
@@ -332,7 +383,7 @@ footer .fa-solid {
   }  
   .copyright {
     padding-right: 1rem;
-  }  
+  }   
 }
 
 /* Responsive layout - makes a three column-layout instead of four columns */
@@ -350,6 +401,11 @@ footer .fa-solid {
   .card-img-top-small {
   max-width: 220px;
   }
+  .about-column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
 }
 
 /* Responsive layout - makes a three column-layout instead of four columns */
@@ -363,6 +419,9 @@ footer .fa-solid {
   .card-img-top {
   max-width: 230px;
   }  
+  .card-img-about {
+  max-width: 230px;
+  }     
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
@@ -372,6 +431,12 @@ footer .fa-solid {
     display: block;
     margin-bottom: 20px;
   }  
+  .card-img-about {       
+	max-width: 220px;
+  } 
+   .text-block{
+	visibility: hidden;
+  } 
 }
 
 /* Responsive columns - one column layout (vertical) on small screens */
@@ -381,11 +446,16 @@ footer .fa-solid {
     display: block;
     margin-bottom: 20px;
   }
+  .about-column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (max-width: 600px) {
-  .about-img {    
-    margin-right: 2rem;
+  .card-img-about {
+	width: 450px;     
   }
 }
 
